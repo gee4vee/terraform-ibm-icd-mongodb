@@ -95,206 +95,232 @@
           },
           "configuration": [
             {
-              "key": "ibmcloud_api_key"
+              "key": "access_tags",
+              "required": false,
+              "default_value": "[]"
             },
             {
-              "key": "provider_visibility",
-              "options": [
-                {
-                  "displayname": "private",
-                  "value": "private"
-                },
-                {
-                  "displayname": "public",
-                  "value": "public"
-                },
-                {
-                  "displayname": "public-and-private",
-                  "value": "public-and-private"
-                }
-              ]
+              "key": "admin_pass",
+              "required": false,
+              "default_value": "__NULL__"
             },
             {
-              "key": "use_existing_resource_group"
+              "key": "admin_pass_secret_manager_secret_group",
+              "required": false,
+              "default_value": "mongodb-secrets"
             },
             {
-              "key": "resource_group_name"
+              "key": "admin_pass_secret_manager_secret_name",
+              "required": false,
+              "default_value": "mongodb-admin-password"
             },
             {
-              "key": "prefix"
+              "key": "auto_scaling",
+              "required": false,
+              "default_value": "__NULL__"
             },
             {
-              "key": "name"
+              "key": "backup_crn",
+              "required": false,
+              "default_value": "__NULL__"
             },
             {
-              "key": "region",
-              "required": true,
-              "default_value": "us-south",
-              "options": [
-                {
-                  "displayname": "Chennai (che01)",
-                  "value": "che01"
-                },
-                {
-                  "displayname": "Dallas (us-south)",
-                  "value": "us-south"
-                },
-                {
-                  "displayname": "Frankfurt (eu-de)",
-                  "value": "eu-de"
-                },
-                {
-                  "displayname": "London (eu-gb)",
-                  "value": "eu-gb"
-                },
-                {
-                  "displayname": "Madrid (eu-es)",
-                  "value": "eu-es"
-                },
-                {
-                  "displayname": "Osaka (jp-osa)",
-                  "value": "jp-osa"
-                },
-                {
-                  "displayname": "Paris (par01)",
-                  "value": "par01"
-                },
-                {
-                  "displayname": "Sao Paulo (br-sao)",
-                  "value": "br-sao"
-                },
-                {
-                  "displayname": "Sydney (au-syd)",
-                  "value": "au-syd"
-                },
-                {
-                  "displayname": "Toronto (ca-tor)",
-                  "value": "ca-tor"
-                },
-                {
-                  "displayname": "Tokyo (jp-tok)",
-                  "value": "jp-tok"
-                },
-                {
-                  "displayname": "Washington (us-east)",
-                  "value": "us-east"
-                }
-              ]
+              "key": "cpu_count",
+              "required": false
+            },
+            {
+              "key": "disk_mb",
+              "required": false,
+              "default_value": 10240
+            },
+            {
+              "key": "existing_backup_kms_key_crn",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "existing_kms_instance_crn",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "existing_kms_key_crn",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "existing_mongodb_instance_crn",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "existing_secrets_manager_endpoint_type",
+              "required": false,
+              "default_value": "private"
+            },
+            {
+              "key": "existing_secrets_manager_instance_crn",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "ibmcloud_api_key",
+              "required": true
+            },
+            {
+              "key": "ibmcloud_kms_api_key",
+              "required": false,
+              "default_value": "__NULL__"
+            },
+            {
+              "key": "key_name",
+              "required": false,
+              "default_value": "mongodb-key"
+            },
+            {
+              "key": "key_ring_name",
+              "required": false,
+              "default_value": "mongodb-key-ring"
+            },
+            {
+              "key": "kms_endpoint_type",
+              "required": false,
+              "default_value": "private"
+            },
+            {
+              "key": "member_host_flavor",
+              "required": false,
+              "default_value": "multitenant"
+            },
+            {
+              "key": "members",
+              "required": false,
+              "default_value": 3
+            },
+            {
+              "key": "memory_mb",
+              "required": false,
+              "default_value": 4096
             },
             {
               "key": "mongodb_version",
               "required": false,
-              "default_value": "__NULL__",
-              "options": [
-                {
-                  "displayname": "preferred",
-                  "value": "__NULL__"
-                },
-                {
-                  "displayname": "6.0",
-                  "value": "6.0"
-                },
-                {
-                  "displayname": "7.0",
-                  "value": "7.0"
-                }
-              ]
+              "default_value": "__NULL__"
             },
             {
-              "key": "plan"
+              "key": "name",
+              "required": false,
+              "default_value": "mongodb"
             },
             {
-              "key": "members"
+              "key": "plan",
+              "required": false,
+              "default_value": "standard"
             },
             {
-              "key": "memory_mb"
+              "key": "prefix",
+              "required": false,
+              "default_value": "__NULL__"
             },
             {
-              "key": "cpu_count"
+              "key": "provider_visibility",
+              "required": false,
+              "default_value": "private"
             },
             {
-              "key": "disk_mb"
+              "key": "region",
+              "required": false,
+              "default_value": "us-south"
             },
             {
-              "key": "member_host_flavor"
+              "key": "resource_group_name",
+              "required": true,
+              "default_value": "__NOT_SET__"
             },
             {
-              "key": "service_credential_names"
+              "key": "service_credential_names",
+              "required": false,
+              "default_value": "{}"
             },
             {
-              "key": "admin_pass"
+              "key": "service_credential_secrets",
+              "required": false,
+              "default_value": "[]"
             },
             {
-              "key": "admin_pass_secret_manager_secret_group"
+              "key": "skip_mongodb_kms_auth_policy",
+              "required": false
             },
             {
-              "key": "admin_pass_secret_manager_secret_name"
+              "key": "skip_mongodb_secret_manager_auth_policy",
+              "required": false
             },
             {
-              "key": "existing_mongodb_instance_crn"
+              "key": "tags",
+              "required": false,
+              "default_value": "[]"
             },
             {
-              "key": "use_existing_admin_pass_secret_manager_secret_group"
+              "key": "use_default_backup_encryption_key",
+              "required": false
             },
             {
-              "key": "users"
+              "key": "use_existing_admin_pass_secret_manager_secret_group",
+              "required": false
             },
             {
-              "key": "tags"
+              "key": "use_existing_resource_group",
+              "required": false
             },
             {
-              "key": "access_tags"
+              "key": "use_ibm_owned_encryption_key",
+              "required": false
             },
             {
-              "key": "use_ibm_owned_encryption_key"
-            },
-            {
-              "key": "existing_kms_instance_crn"
-            },
-            {
-              "key": "existing_kms_key_crn"
-            },
-            {
-              "key": "kms_endpoint_type"
-            },
-            {
-              "key": "skip_mongodb_kms_auth_policy"
-            },
-            {
-              "key": "ibmcloud_kms_api_key"
-            },
-            {
-              "key": "key_ring_name"
-            },
-            {
-              "key": "key_name"
-            },
-            {
-              "key": "existing_backup_kms_key_crn"
-            },
-            {
-              "key": "use_default_backup_encryption_key"
-            },
-            {
-              "key": "auto_scaling"
-            },
-            {
-              "key": "backup_crn"
-            },
-            {
-              "key": "existing_secrets_manager_instance_crn"
-            },
-            {
-              "key": "existing_secrets_manager_endpoint_type"
-            },
-            {
-              "key": "service_credential_secrets"
-            },
-            {
-              "key": "skip_mongodb_secret_manager_auth_policy"
+              "key": "users",
+              "required": false,
+              "default_value": "[]"
             }
           ],
-          "release_notes_url": "https://github.com/gee4vee/terraform-ibm-icd-mongodb/raw/1.7.1-alpha/CHANGELOG.md"
+          "release_notes_url": "https://github.com/gee4vee/terraform-ibm-icd-mongodb/raw/1.7.1-alpha/CHANGELOG.md",
+          "outputs": [
+            {
+              "key": "crn",
+              "description": "MongoDB instance crn"
+            },
+            {
+              "key": "guid",
+              "description": "MongoDB instance guid"
+            },
+            {
+              "key": "hostname",
+              "description": "Database connection hostname"
+            },
+            {
+              "key": "id",
+              "description": "MongoDB instance id"
+            },
+            {
+              "key": "port",
+              "description": "Database connection port"
+            },
+            {
+              "key": "secrets_manager_secrets",
+              "description": "Service credential secrets"
+            },
+            {
+              "key": "service_credentials_json",
+              "description": "Service credentials json map"
+            },
+            {
+              "key": "service_credentials_object",
+              "description": "Service credentials object"
+            },
+            {
+              "key": "version",
+              "description": "MongoDB instance version"
+            }
+          ]
         }
       ],
       "version": "1.7.1-alpha"
