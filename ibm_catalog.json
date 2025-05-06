@@ -23,7 +23,7 @@
       ],
       "short_description": "Creates and configures an instance of IBM Cloud Databases for MongoDB.",
       "long_description": "This architecture supports creating and configuring an instance of Databases for MongoDB with KMS encryption.",
-      "offering_docs_url": "https://github.com/terraform-ibm-modules/terraform-ibm-icd-mongodb/blob/main/README.md",
+      "offering_docs_url": "https://github.com/gee4vee/terraform-ibm-icd-mongodb/raw/1.7.1-alpha/README.md",
       "offering_icon_url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-icd-mongodb/main/images/mongodb.svg",
       "provider_name": "IBM",
       "features": [
@@ -86,7 +86,7 @@
               {
                 "diagram": {
                   "caption": "Databases for MongoDB instance on IBM Cloud",
-                  "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-ibm-icd-mongodb/main/reference-architecture/deployable-architecture-mongodb.svg",
+                  "url": "https://github.com/gee4vee/terraform-ibm-icd-mongodb/raw/1.7.1-alpha/reference-architecture/deployable-architecture-mongodb.svg",
                   "type": "image/svg+xml"
                 },
                 "description": "This architecture supports creating and configuring an instance of Databases for MongoDB instance with KMS encryption."
@@ -187,8 +187,8 @@
               "default_value": "__NULL__",
               "options": [
                 {
-                "displayname": "preferred",
-                "value": "__NULL__"
+                  "displayname": "preferred",
+                  "value": "__NULL__"
                 },
                 {
                   "displayname": "6.0",
@@ -198,7 +198,6 @@
                   "displayname": "7.0",
                   "value": "7.0"
                 }
-
               ]
             },
             {
@@ -294,9 +293,11 @@
             {
               "key": "skip_mongodb_secret_manager_auth_policy"
             }
-          ]
+          ],
+          "release_notes_url": "https://github.com/gee4vee/terraform-ibm-icd-mongodb/raw/1.7.1-alpha/CHANGELOG.md"
         }
-      ]
+      ],
+      "version": "1.7.1-alpha"
     }
   ]
 }
