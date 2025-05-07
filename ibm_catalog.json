@@ -93,6 +93,9 @@
               }
             ]
           },
+          "schematics_env_values": {
+            "value": "[{\"name\": \"IBMCLOUD_IAM_API_ENDPOINT\",\"value\": \"IBMCLOUD_RESOURCE_CONTROLLER_API_ENDPOINT\",\"secure\": false,\"hidden\": false},{\"name\": \"IBMCLOUD_RESOURCE_CATALOG_API_ENDPOINT\",\"value\": \"https://resource-controller.test.cloud.ibm.com/\",\"secure\": false,\"hidden\": false},{\"name\": \"IBMCLOUD_RESOURCE_MANAGEMENT_API_ENDPOINT\",\"value\": \"https://resource-controller.test.cloud.ibm.com\",\"secure\": false,\"hidden\": false},{\"name\": \"IBMCLOUD_RESOURCE_MANAGEMENT_API_ENDPOINT\",\"value\": \"https://globalcatalog.test.cloud.ibm.com\",\"secure\": false,\"hidden\": false},{\"name\": \"IBMCLOUD_GT_API_ENDPOINT\",\"value\": \"https://tags.global-search-tagging.test.cloud.ibm.com\",\"secure\": false,\"hidden\": false}]"
+          },
           "configuration": [
             {
               "key": "access_tags",
