@@ -144,7 +144,7 @@
             {
               "key": "existing_kms_instance_crn",
               "required": false,
-              "default_value": "__NULL__"
+              "default_value": "crn:v1:staging:public:kms:us-south:a/d11256044e024d5bbea1a7d7ee4575c2:d80bef6d-9d56-42b3-98d5-ef34672a36ad::"
             },
             {
               "key": "existing_kms_key_crn",
@@ -164,7 +164,7 @@
             {
               "key": "existing_secrets_manager_instance_crn",
               "required": false,
-              "default_value": "__NULL__"
+              "default_value": "crn:v1:staging:public:secrets-manager:eu-gb:a/d11256044e024d5bbea1a7d7ee4575c2:6cedeb57-43a6-4ebc-af0e-352c193cd562::"
             },
             {
               "key": "ibmcloud_api_key",
@@ -223,7 +223,7 @@
             {
               "key": "prefix",
               "required": false,
-              "default_value": "__NULL__"
+              "default_value": "gv-mongodb"
             },
             {
               "key": "provider_visibility",
@@ -238,7 +238,7 @@
             {
               "key": "resource_group_name",
               "required": true,
-              "default_value": "__NOT_SET__"
+              "default_value": "gv-mongodb"
             },
             {
               "key": "service_credential_names",
